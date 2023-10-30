@@ -19,6 +19,7 @@ Crie um relacionamento entre "Pedidos" e "Clientes" para rastrear os pedidos de 
 Estabeleça um relacionamento entre "Itens de Pedido" e "Produtos" para associar produtos a pedidos.
 
 diagrama lógico:
+
 ![diagrama-lógico](Diagrama_lógico.png)
 
 
