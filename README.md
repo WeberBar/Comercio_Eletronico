@@ -161,3 +161,49 @@ VALUES
   ('Laura Costa', '123 Estrada F, Cidade H', '(43) 9210-8765', 'laura@email.com'),
   ('Raul Lima', '456 Avenida G, Cidade G', '(54) 9109-7654', 'raul@email.com');
 ```
+Adicionar no carinho: 
+```sql
+call adicionar_produtos_carrinho(1,2);
+call adicionar_produtos_carrinho(2,2);
+call adicionar_produtos_carrinho(3,3);
+call adicionar_produtos_carrinho(4,4);
+call adicionar_produtos_carrinho(5,6);
+call adicionar_produtos_carrinho(6,7);
+call adicionar_produtos_carrinho(7,5);
+call adicionar_produtos_carrinho(8,8);
+call adicionar_produtos_carrinho(9,9);
+call adicionar_produtos_carrinho(10,10);
+call adicionar_produtos_carrinho(11,12);
+call adicionar_produtos_carrinho(12,11);
+call adicionar_produtos_carrinho(13,13);
+call adicionar_produtos_carrinho(14,1);
+call adicionar_produtos_carrinho(15,5);
+call adicionar_produtos_carrinho(16,14);
+call adicionar_produtos_carrinho(17,15);
+call adicionar_produtos_carrinho(18,19);
+call adicionar_produtos_carrinho(19,5);
+```
+Processar Pedido:
+```sql
+call ProcessarPedido(1,1,'2023-10-13');
+call ProcessarPedido(2,2,'2023-10-15');
+call ProcessarPedido(3,3,'2023-10-30');
+call ProcessarPedido(4,4,'2023-09-25');
+call ProcessarPedido(5,5,'2023-07-12');
+call ProcessarPedido(6,6,'2023-02-10');
+call ProcessarPedido(7,7,'2023-01-11');
+call ProcessarPedido(8,8,'2023-12-12');
+call ProcessarPedido(9,9,'2023-11-23');
+call ProcessarPedido(10,10,'2023-10-10');
+call ProcessarPedido(11,11,'2023-11-01');
+call ProcessarPedido(12,12,'2023-04-18');
+call ProcessarPedido(13,13,'2023-03-18');
+call ProcessarPedido(14,14,'2023-02-08');
+call ProcessarPedido(15,15,'2023-12-09');
+call ProcessarPedido(16,16,'2023-02-08');
+call ProcessarPedido(17,17,'2023-12-01');
+call ProcessarPedido(18,18,'2023-11-11');
+call ProcessarPedido(19,19,'2023-09-01');
+call ProcessarPedido(20,20,'2023-09-12');
+
+```
