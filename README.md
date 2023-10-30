@@ -107,3 +107,57 @@ SELECT idProdutos, nome, descricao, preco, Quantidade_estoque
 FROM Produtos
 WHERE Quantidade_estoque > 0;
 ```
+
+### inserções:
+
+Produtos:
+```sql
+INSERT INTO Produtos (nome, descricao, preco, Quantidade_estoque)
+VALUES
+  ('Smartphone iPhone 13', 'Tela de 6.1", 128GB, Azul', 999.99, 50),
+  ('Notebook Dell XPS 15', '15.6" 4K UHD, i7, 16GB RAM', 1499.99, 30),
+  ('Televisão Samsung 4K', '55 polegadas QLED Smart TV', 799.99, 20),
+  ('Console de Jogos PlayStation 5', 'SSD 825GB, 4K Ultra HD', 499.99, 10),
+  ('Fone de Ouvido Bose QC 35', 'Cancelamento de Ruído', 199.99, 60),
+  ('Câmera Canon EOS 5D Mark IV', '30.4 MP, 4K Video', 2499.99, 15),
+  ('Impressora HP LaserJet Pro', 'Wireless, Impressão Duplex', 149.99, 25),
+  ('Tablet Samsung Galaxy Tab S7', '11" AMOLED, 128GB', 399.99, 40),
+  ('Monitor LG UltraWide', '34" Curved 21:9, QHD', 299.99, 12),
+  ('Refrigerador LG French Door', '26.2 cu. ft., Aço inoxidável', 1499.99, 8),
+  ('Máquina de Lavar Samsung', 'Front Load, 4.5 cu. ft.', 599.99, 18),
+  ('Aspirador de Pó Dyson V11', 'Bateria de 60 minutos', 299.99, 30),
+  ('Batedeira KitchenAid', '5 Quart, 10 velocidades', 129.99, 20),
+  ('Panela Instant Pot Duo', '7-em-1, 6 Quart', 89.99, 25),
+  ('Micro-ondas Panasonic', '1100W, 1.2 cu. ft.', 79.99, 15),
+  ('Sofá de Couro Natuzzi', '3 Lugares, Marrom', 899.99, 10),
+  ('Mesa de Jantar Ashley', 'Madeira maciça, 6 Cadeiras', 699.99, 10),
+  ('Cama King Size Sleep Number', 'Ajustável, Memory Foam', 1499.99, 5),
+  ('Máquina de Exercícios Peloton', 'Tela sensível ao toque', 1999.99, 10);
+  
+```
+
+Clientes:
+```sql
+ INSERT INTO Clientes (nomeCliente, endereco, telefone, email)
+VALUES
+  ('Maria Silva', '123 Rua A, Cidade X', '(12) 9456-7890', 'maria@email.com'),
+  ('João Santos', '456 Rua B, Cidade Y', '(32) 9654-0987', 'joao@email.com'),
+  ('Ana Pereira', '789 Rua C, Cidade Z', '(98) 9321-6540', 'ana@email.com'),
+  ('Carlos Rodrigues', '234 Avenida A, Cidade W', '(65) 9987-3210', 'carlos@email.com'),
+  ('Isabela Gomes', '567 Avenida B, Cidade V', '(23) 9567-8901', 'isabela@email.com'),
+  ('Lucas Ferreira', '890 Estrada A, Cidade U', '(80) 9234-5670', 'lucas@email.com'),
+  ('Sofia Oliveira', '123 Estrada B, Cidade T', '(15) 9678-9012', 'sofia@email.com'),
+  ('Gustavo Sousa', '456 Avenida C, Cidade S', '(12) 9901-2345', 'gustavo@email.com'),
+  ('Larissa Costa', '789 Rua D, Cidade R', '(11) 9123-4567', 'larissa@email.com'),
+  ('Pedro Alves', '234 Rua E, Cidade Q', '(11) 9109-8765', 'pedro@email.com'),
+  ('Mariana Santos', '567 Estrada C, Cidade P', '(11) 9210-9876', 'mariana@email.com'),
+  ('Rafael Lima', '890 Avenida D, Cidade O', '(11) 9321-0987', 'rafael@email.com'),
+  ('Camila Pereira', '123 Rua F, Cidade N', '(15) 9432-1098', 'camila@email.com'),
+  ('Enzo Carvalho', '456 Estrada D, Cidade M', '(15) 9543-2109', 'enzo@email.com'),
+  ('Lívia Fernandes', '789 Estrada E, Cidade L', '(15) 9654-3210', 'livia@email.com'),
+  ('Thiago Rocha', '234 Avenida E, Cidade K', '(15) 9765-4321', 'thiago@email.com'),
+  ('Amanda Martins', '567 Rua G, Cidade J', '(21) 9876-5432', 'amanda@email.com'),
+  ('Diego Santos', '890 Avenida F, Cidade I', '(32) 9987-6543', 'diego@email.com'),
+  ('Laura Costa', '123 Estrada F, Cidade H', '(43) 9210-8765', 'laura@email.com'),
+  ('Raul Lima', '456 Avenida G, Cidade G', '(54) 9109-7654', 'raul@email.com');
+```
