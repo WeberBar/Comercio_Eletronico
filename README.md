@@ -6,21 +6,72 @@ Você foi designado para criar um sistema de comercio eletrônico. Aqui estão o
 
 Produtos: Armazene informações sobre produtos, como nome, descrição, preço e quantidade em estoque.
 
+```mysql
+CREATE TABLE Produtos (
+    id_Produto INT NOT NULL AUTO_INCREMENT,
+    Nome VARCHAR(200) NOT NULL,
+    Descricao TEXT,
+    Preco DECIMAL(10, 2) NOT NULL,
+    QuantidadeEstoque INT NOT NULL,
+    PRIMARY KEY (id_Produto)
+);
+```
+
 Pedidos: Registre detalhes de pedidos, incluindo data, cliente e status.
 
+```mysql
+CREATE TABLE Pedidos (
+    Id_Pedido INT NOT NULL AUTO_INCREMENT,
+    Data_Pedido DATE NOT NULL,
+    Cliente_id INT NOT NULL,
+    Status VARCHAR(200) NOT NULL,
+    PRIMARY KEY (Id_Pedido),
+    FOREIGN KEY (Cliente_id) REFERENCES Clientes(Cliente_id)
+);
+```
 Clientes: Mantenha informações dos clientes, como nome, endereço de entrega e informações de contato.
 
+```mysql
+CREATE TABLE Clientes (
+    Cliente_id INT NOT NULL AUTO_INCREMENT,
+    Nome VARCHAR(200) NOT NULL,
+    EnderecoEntrega VARCHAR(255),
+    Telefone VARCHAR(20) NOT NULL,
+    Email VARCHAR(200) NOT NULL,
+    PRIMARY KEY (Cliente_id)
+);
+```
 Itens de Pedido: Registre os produtos incluídos em cada pedido, junto com a quantidade.
+
+```mysql
+CREATE TABLE Itens_Pedido (
+    id_Item INT NOT NULL AUTO_INCREMENT,
+    Id_Pedido INT NOT NULL,
+    id_Produto INT NOT NULL,
+    Quantidade INT NOT NULL,
+    PRIMARY KEY (id_Item),
+    FOREIGN KEY (Id_Pedido) REFERENCES Pedidos(Id_Pedido),
+    FOREIGN KEY (id_Produto) REFERENCES Produtos(id_Produto)
+);
+```
 
 ### Relacionamentos:
 
 Crie um relacionamento entre "Pedidos" e "Clientes" para rastrear os pedidos de cada cliente.
 
 Estabeleça um relacionamento entre "Itens de Pedido" e "Produtos" para associar produtos a pedidos.
+```mysql
+-- Na tabela Pedidos, a coluna Cliente_id é uma chave estrangeira que faz referência à coluna Cliente_id na tabela Clientes.
+FOREIGN KEY (Cliente_id) REFERENCES Clientes(Cliente_id)
+
+-- Na tabela Itens_Pedido, as colunas Id_Pedido e id_Produto são chaves estrangeiras que fazem referência às colunas correspondentes nas tabelas Pedidos e Produtos
+    FOREIGN KEY (Id_Pedido) REFERENCES Pedidos(Id_Pedido),
+    FOREIGN KEY (id_Produto) REFERENCES Produtos(id_Produto)
+```
 
 diagrama lógico:
 
-![diagrama-lógico](Diagrama_lógico.png)
+
 
 
 ### Stored Procedures:
