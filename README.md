@@ -306,3 +306,5 @@ SELECT * FROM comercioeletronico.produtosdisponiveis;
 ```
 
 ![totalDisponivel](disponiveis.png)
+
+<h2>FIM</h2>
