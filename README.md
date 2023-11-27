@@ -65,8 +65,8 @@ Estabeleça um relacionamento entre "Itens de Pedido" e "Produtos" para associar
 FOREIGN KEY (Cliente_id) REFERENCES Clientes(Cliente_id)
 
 -- Na tabela Itens_Pedido, as colunas Id_Pedido e id_Produto são chaves estrangeiras que fazem referência às colunas correspondentes nas tabelas Pedidos e Produtos
-    FOREIGN KEY (Id_Pedido) REFERENCES Pedidos(Id_Pedido),
-    FOREIGN KEY (id_Produto) REFERENCES Produtos(id_Produto)
+FOREIGN KEY (Id_Pedido) REFERENCES Pedidos(Id_Pedido),
+FOREIGN KEY (id_Produto) REFERENCES Produtos(id_Produto)
 ```
 
 diagrama lógico:
