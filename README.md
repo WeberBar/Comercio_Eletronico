@@ -308,3 +308,4 @@ SELECT * FROM comercioeletronico.produtosdisponiveis;
 ![totalDisponivel](disponiveis.png)
 
 <h2>FIM</h2>
+Código: ![Código](Comercio_eletronico.sql)
