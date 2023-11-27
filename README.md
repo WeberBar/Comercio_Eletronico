@@ -71,7 +71,7 @@ FOREIGN KEY (id_Produto) REFERENCES Produtos(id_Produto)
 
 diagrama lógico:
 
-![diagrama]()
+![diagrama](modelo_logico.png)
 
 
 ### Stored Procedures:
