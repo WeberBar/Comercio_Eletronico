@@ -105,7 +105,7 @@ CREATE PROCEDURE ProcessarPedido(
     IN p_PedidoId INT
 )
 BEGIN
-    -- Atualizar o estoque dos produtos (aqui você precisa ajustar conforme suas necessidades)
+    -- Atualizar o estoque dos produtos
     UPDATE Produtos P
     JOIN Itens_Pedido IP ON P.id_Produto = IP.id_Produto
     SET P.QuantidadeEstoque = P.QuantidadeEstoque - IP.Quantidade
