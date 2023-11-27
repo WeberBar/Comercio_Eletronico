@@ -283,4 +283,26 @@ Processar Pedido:
 call comercioeletronico.ProcessarPedido(6);
 ```
 
+Verificando resultado:
+```mysql
+SELECT * FROM comercioeletronico.historicopedidoscliente;
+```
 
+![resultado](resultado_processar.png)
+
+Total pedido:
+
+```mysql
+set @p_Total = 0;
+call comercioeletronico.CalcularTotalPedido(2, @p_Total);
+select @p_Total;
+```
+
+![totalPedido](total.png)
+
+Produtos Disponiveis:
+```mysql
+SELECT * FROM comercioeletronico.produtosdisponiveis;
+```
+
+![totalDisponivel](disponiveis.png)
