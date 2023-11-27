@@ -272,10 +272,15 @@ VALUES
 
 Adicionar no carinho: 
 ```sql
-
+call comercioeletronico.AdicionarAoCarrinho(5, 12, 2);
 ```
+
+Verificando resultado:
+![resultado](resultado_adicionar.png)
+
 Processar Pedido:
 ```sql
-
-
+call comercioeletronico.ProcessarPedido(6);
 ```
+
+
