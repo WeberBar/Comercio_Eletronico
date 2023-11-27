@@ -1,4 +1,4 @@
-<h1 align="center">Comercio_Eletronico</h1>
+<h1 align="center">Comércio eletrônico</h1>
 
 Você foi designado para criar um sistema de comercio eletrônico. Aqui estão os detalhes adicionais:
 
